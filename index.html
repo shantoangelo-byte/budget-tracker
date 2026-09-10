@@ -1,0 +1,318 @@
+ ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget Tracker | Manage Your Money</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- SEO Description -->
+    <meta name="description"
+          content="A simple and responsive Budget Tracker for managing income, expenses, and savings.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Budget Tracker | Manage Your Money">
+    <meta property="og:description"
+          content="A simple budget tracker for keeping track of income, expenses, and savings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+          content="https://shantoangelo.github.io/budget-tracker/">
+    <meta property="og:image"
+          content="https://shantoangelo.github.io/budget-tracker/preview.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#home" class="logo">
+                Budget<span>Tracker</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#overview">Overview</a>
+                <a href="#transactions">Transactions</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">PERSONAL FINANCE</p>
+
+                    <h1>
+                        Take control of
+                        <span>your budget.</span>
+                    </h1>
+
+                    <p>
+                        Budget Tracker is a simple tool designed to help you
+                        organize your income, monitor expenses, and understand
+                        where your money goes.
+                    </p>
+
+                    <a href="#overview" class="btn primary">
+                        View My Budget
+                    </a>
+
+                </div>
+
+
+                <div class="budget-card">
+
+                    <div class="card-header">
+                        <span>Monthly Budget</span>
+                        <span>2026</span>
+                    </div>
+
+                    <h2>KSh 50,000</h2>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                    <div class="budget-details">
+                        <div>
+                            <strong>KSh 32,500</strong>
+                            <span>Spent</span>
+                        </div>
+
+                        <div>
+                            <strong>KSh 17,500</strong>
+                            <span>Remaining</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Overview -->
+        <section class="section" id="overview">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">BUDGET OVERVIEW</p>
+
+                    <h2>Know where your money goes</h2>
+
+                    <p>
+                        A clear overview can make it easier to understand
+                        your spending and plan your finances.
+                    </p>
+                </div>
+
+
+                <div class="summary-grid">
+
+                    <div class="summary-card income">
+                        <span class="summary-icon">↗</span>
+                        <p>Total Income</p>
+                        <h3>KSh 50,000</h3>
+                        <small>This month</small>
+                    </div>
+
+
+                    <div class="summary-card expense">
+                        <span class="summary-icon">↘</span>
+                        <p>Total Expenses</p>
+                        <h3>KSh 32,500</h3>
+                        <small>This month</small>
+                    </div>
+
+
+                    <div class="summary-card savings">
+                        <span class="summary-icon">✓</span>
+                        <p>Total Savings</p>
+                        <h3>KSh 17,500</h3>
+                        <small>This month</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Transactions -->
+        <section class="section transactions-section" id="transactions">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">RECENT ACTIVITY</p>
+
+                    <h2>Recent transactions</h2>
+
+                    <p>
+                        Example transactions showing how expenses can be
+                        organized in the Budget Tracker.
+                    </p>
+                </div>
+
+
+                <div class="transactions">
+
+                    <div class="transaction">
+                        <div class="transaction-icon">🛒</div>
+
+                        <div class="transaction-info">
+                            <h3>Groceries</h3>
+                            <p>Food & household</p>
+                        </div>
+
+                        <strong class="amount expense-amount">
+                            - KSh 4,500
+                        </strong>
+                    </div>
+
+
+                    <div class="transaction">
+                        <div class="transaction-icon">🚌</div>
+
+                        <div class="transaction-info">
+                            <h3>Transport</h3>
+                            <p>Travel</p>
+                        </div>
+
+                        <strong class="amount expense-amount">
+                            - KSh 2,000
+                        </strong>
+                    </div>
+
+
+                    <div class="transaction">
+                        <div class="transaction-icon">💼</div>
+
+                        <div class="transaction-info">
+                            <h3>Salary</h3>
+                            <p>Income</p>
+                        </div>
+
+                        <strong class="amount income-amount">
+                            + KSh 50,000
+                        </strong>
+                    </div>
+
+
+                    <div class="transaction">
+                        <div class="transaction-icon">📱</div>
+
+                        <div class="transaction-info">
+                            <h3>Phone & Internet</h3>
+                            <p>Utilities</p>
+                        </div>
+
+                        <strong class="amount expense-amount">
+                            - KSh 3,000
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="section about-section" id="about">
+
+            <div class="container about-content">
+
+                <div>
+                    <p class="eyebrow">ABOUT THE PROJECT</p>
+
+                    <h2>A simple approach to budgeting</h2>
+                </div>
+
+                <div>
+                    <p>
+                        This Budget Tracker is a student web development
+                        project. The current version focuses on building the
+                        structure and visual design using HTML and CSS.
+                    </p>
+
+                    <p>
+                        JavaScript functionality will be added next week to
+                        make the application interactive.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="cta">
+
+            <div class="container">
+
+                <p class="eyebrow">COMING NEXT</p>
+
+                <h2>
+                    Turn this design into a working budget tracker.
+                </h2>
+
+                <p>
+                    JavaScript functionality starts next week, including
+                    adding, editing, and calculating transactions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#home" class="logo">
+                    Budget<span>Tracker</span>
+                </a>
+
+                <p>
+                    A student web development project.
+                </p>
+            </div>
+
+            <p>
+                © 2026 Budget Tracker
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
